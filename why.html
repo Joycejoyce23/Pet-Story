@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>why</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            border: 2px solid black;
+        }
+
+        .left-column {
+            background-color: lightblue;
+            padding-top: 90px;
+            padding-bottom: 50px;
+        }
+
+        .description-container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .description-container h1 {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .description-container p {
+            font-size: 1rem;
+            font-weight: 300;
+            text-align: justify;
+        }
+
+
+        .right-column {
+            background-color: lightpink;
+        }
+
+        .vet-image {
+            width: 100%;
+            object-fit: cover;
+            height: 100vh;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="slider">
+            <div class="list">
+                <div class="items">
+                    <div class="left-column">
+                        <div class="description-container">
+                            <h1>Where Compassion Meets Expertise: Our Commitment to Exceptional Pet Care</h1>
+                            <p>Founded on the principles of compassion, knowledge, and personalized care, our clinic
+                                stands as a beacon of excellence in veterinary medicine. Led by a team of dedicated
+                                professionals, we offer a comprehensive range of services, from routine check-ups to
+                                advanced treatments, ensuring that every pet receives the highest standard of care.</p>
+                            <p>Our state-of-the-art facility is more than just a clinic, it’s a sanctuary where pets and
+                                their families feel heard, understood, and supported. We prioritize building lasting
+                                relationships, taking the time to understand the unique needs of each furry friend and
+                                tailoring our approach accordingly.</p>
+                        </div>
+                    </div>
+                    <div style="border: 2px solid pink">
+                        <img src="img/vet.jpg" alt="vet" class="vet-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

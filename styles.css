@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: nunito;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    background-color: rgb(4, 37, 90);
+    height: 78px;
+    width: 100%;
+    position: fixed;
+    box-shadow: 1px 1px 1px black;
+    z-index: 100;
+}
+
+.logo-brand p {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600
+}
+
+.logo-brand i {
+    font-size: 1.5rem;
+    padding-right: 5px;
+}
+
+.nav-container {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-right: 50px;
+    gap: 25px;
+}
+
+.nav-section {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.nav-button {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+    background-color: rgba(218, 233, 255, 1);
+    padding: 10px 14px 10px 14px;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.nav-button:hover {
+    box-shadow: 2px 2px 2px black;
+    background-color: rgba(218, 233, 255, 0.9);
+}
+
+.home-section {
+    padding-top: 130px;
+    padding-bottom: 100px;
+}
+
+.home-section-title {
+    padding-bottom: 35px;
+}
+
+.home-section-title header {
+    text-align: center;
+    font-size: 4rem;
+    font-family: Nunito;
+    font-weight: 700;
+}
+
+.home-section-title p {
+    text-align: center;
+    font-family: Nunito;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.home-content {
+    width: 80%;
+    height: 1500px;
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.home-content-grid1 {
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(img/1.jpg);
+    background-size: cover;
+    grid-row: 1/span 2;
+    grid-column: 1/span 2;
+}
+
+.home-content-grid2 {
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(img/2.jpg);
+    background-size: cover;
+}
+
+.home-content-grid3 {
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(img/3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content-grid4 {
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(img/4.jpg);
+    grid-column: 3/span 2;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content-grid5 {
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(img/5.jpg);
+    grid-row: 3/span 2;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content-grid6 {
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(img/6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content-grid7 {
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(img/7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content-grid8 {
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(img/8.jpg);
+    grid-column: 3/span 2;
+    grid-row: 3/span 2;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content-grid9 {
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(img/9.jpg);
+    grid-column: 1/span 4;
+    grid-row: 5/span 2;
+    background-size: cover;
+}
+
+.slider {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    height: 640px;
+    overflow: hidden;
+}
+
+.list {
+    position: absolute;
+    display: flex;
+    transition: 1s;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 640px;
+    width: 100vw;
+}
+
+.description-column {
+    background-color: rgba(218, 233, 255, 0.759);
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+
+.description-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.description-container h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.description-container p {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+.picture-column {
+    background-size: cover;
+    background-position: center;
+}
+
+#about{
+    padding-top: 78px;
+}
+
+.bg-about1 {
+    background-image: url(img/vet.jpg);
+}
+
+.bg-about2 {
+    background-image: url(img/grooming.jpg);
+    background-position: center;
+}
+
+.bg-about3 {
+    background-image: url(img/dogshower.jpg);
+}
+
+.bg-about4 {
+    background-image: url(img/photoshoot.jpg);
+    background-position: bottom;
+}
+
+.about-buttons {
+    position: absolute;
+    top: 50%;
+    width: 90%;
+    margin: 0 63px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-buttons button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.about-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.about-dots .active {
+    width: 25px;
+}
+
+.services-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.services-description {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.services-description h1 {
+    font-size: 3.1rem;
+    font-weight: 600;
+}
+
+.services-description p {
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.services-content {
+    width: 80%;
+    height: 580px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.card {
+    background-color: rgb(4, 37, 90);
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px;
+}
+
+.deal1 {
+    grid-column: 1/span 3;
+}
+
+.deal2 {
+    grid-column: 4/span 2;
+    grid-row: 1/span 3;
+}
+
+.card-content {
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    color: white;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-header h1 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.card-header span {
+    font-size: 1.7rem;
+    color: rgb(255, 200, 0);
+}
+
+.card-content li {
+    font-size: 1.1rem;
+    font-weight: 200;
+    margin-left: 40px;
+}
+
+.card-content-2 {
+    width: 80%;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    margin: 0 auto;
+    color: white;
+}
+
+.card-header-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-header-2 h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    padding-bottom: 80px;
+}
+
+.card-header-2 span {
+    font-size: 2.2rem;
+    color: rgb(255, 200, 0);
+}
+
+.card-content-2 li {
+    font-size: 1.1rem;
+    font-weight: 200;
+    margin-left: 40px;
+}
+
+.card:hover {
+    background-color: rgb(4, 29, 70);
+}
+
+.footer-section{
+   padding-top: 30px;
+   padding-bottom: 50px;
+    background-color: rgb(4, 29, 70);
+    color: white;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 4fr 3fr 3fr;
+    gap: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.map-container h1,
+.contact-container h1,
+.follow-container h1{
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.map-uib{
+    height: 200px;
+}
+
+.contact-content i{
+    font-size: 1.2rem;
+}
+
+.contact-content p{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.contact-gmail,
+.contact-phone,
+.contact-address{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.contact-address p{
+    padding-left: 4px;
+}
+
+.contact-address i{
+    font-size: 1.4rem;
+}
+
+.follow-container h1{
+    display: block;
+}
+
+.follow-icon{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 1.6rem;
+    align-items: center;
+}
+
+.follow-icon a{
+    color: white;
+}

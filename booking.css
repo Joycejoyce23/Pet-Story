@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   font-family: nunito;
+    color: rgb(4, 37, 90);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    background-color: rgb(4, 37, 90);
+    height: 78px;
+    width: 100%;
+    position: fixed;
+    box-shadow: 1px 1px 1px black;
+    z-index: 100;
+}
+
+.logo-brand p {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600
+}
+
+.logo-brand i {
+    font-size: 1.5rem;
+    padding-right: 5px;
+}
+
+.nav-container {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-right: 50px;
+    gap: 25px;
+}
+
+.nav-section {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.nav-button {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+    background-color: rgba(218, 233, 255, 1);
+    padding: 10px 14px 10px 14px;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.nav-button:hover {
+    box-shadow: 2px 2px 2px black;
+    background-color: rgba(218, 233, 255, 0.9);
+}
+
+.full-container{
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: grid;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.form-container{
+    place-self: center;
+    background-color: white;
+    border-radius: 30px;
+    backdrop-filter: blur(3px);
+    border: 2px rgb(4, 37, 90) solid;
+    padding: 40px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-container h1{
+    margin: 0 auto;
+}
+
+.form-label-block{
+    display: block;
+}
+
+.app-date-time{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+}
+
+.input-user{
+    width: 100%;
+    padding: 10px 15px;
+    background-color: white;
+    border: 1.5px solid rgb(4, 37, 90);
+    color: black;
+    font-weight: 400;
+    font-family: nunito;
+    font-size: 0.9rem;
+}
+
+.submit-button{
+    padding: 10px 0px;
+    color: white;
+    background-color: rgb(4, 37, 90);
+    border: white 1px solid;
+    border-radius: 20px;
+    margin-top: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+    font-family: nunito;
+}
+
+.input-container p{
+    font-weight: 300;
+    color:  rgb(4, 37, 90);
+    font-size: 0.8rem;
+    font-style: italic;
+    text-align: justify;
+}
+
+.submit-button:hover{
+    background-color: rgb(255, 255, 255, 0.4);
+    border: 1px rgb(4, 37, 90) solid;
+    color:  rgb(4, 37, 90);
+}
